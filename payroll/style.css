@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+input, select, button {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#driverManagement, #payCalculator {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+div[id$="Results"] p {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: blue;
+}
+
+#dailyInputs div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#dailyInputs label {
+    margin-right: 10px;
+}

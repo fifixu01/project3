@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Payroll Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Driver Payroll System</h1>
+
+    <!-- Driver Management Section -->
+    <div id="driverManagement">
+        <h2>Add Driver</h2>
+        <form id="addDriverForm">
+            <input type="text" id="driverName" placeholder="Driver's Name" required>
+            <input type="number" id="basePay" placeholder="Base Pay" required>
+            <input type="number" id="packageThreshold" placeholder="Package Threshold" required>
+            <button type="button" onclick="addDriver()">Add Driver</button>
+        </form>
+
+        <h2>Calculate Weekly Pay</h2>
+        <select id="driverSelect">
+            <option value="">Select a driver</option>
+        </select>
+        <div id="dailyInputs">
+            <!-- Dynamic inputs for each day will be generated here -->
+        </div>
+        <button type="button" onclick="calculateWeeklyPay()">Calculate Pay</button>
+        <div id="payResults">
+            <p id="weeklyPayResult">Weekly Pay: $0</p>
+            <p id="averagePayPerHourResult">Average Pay per Hour: $0</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
